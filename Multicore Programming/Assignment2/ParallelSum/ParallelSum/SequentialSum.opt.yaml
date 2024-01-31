@@ -1,0 +1,967 @@
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 157, Column: 0 }
+Function:        '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+Args:
+  - Callee:          '?zero@?$duration_values@_J@chrono@std@@SA_JXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 36, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 155, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15030'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 157, Column: 0 }
+Function:        '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+Args:
+  - Callee:          '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 82, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 155, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 184, Column: 0 }
+Function:        '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@XZ'
+Args:
+  - Callee:          '?zero@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@SA?AV123@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 155, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 184, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15015'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@XZ'
+  - String:          ':'
+  - Line:            '0'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 586, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+Args:
+  - Callee:          '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 82, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 586, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-40'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+  - String:          ':'
+  - Line:            '1'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+Args:
+  - Callee:          '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 187, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 586, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+  - String:          ':'
+  - Line:            '1'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 254, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+Args:
+  - Callee:          '?count@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 93, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 252, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 254, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+Args:
+  - Callee:          '??$?0_J$0A@@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEAA@AEB_J@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 82, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 252, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 254, Column: 0 }
+Function:        '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+Args:
+  - Callee:          '?count@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 93, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 252, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+  - String:          ':'
+  - Line:            '3'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 497, Column: 0 }
+Function:        '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+Args:
+  - Callee:          '?time_since_epoch@?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 194, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 496, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 497, Column: 0 }
+Function:        '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+Args:
+  - Callee:          '??$?G_JU?$ratio@$00$0JIJGIA@@std@@_JU01@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV201@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 252, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 496, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14990'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 497, Column: 0 }
+Function:        '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+Args:
+  - Callee:          '?time_since_epoch@?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEBA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 194, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 496, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 392, Column: 0 }
+Function:        '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+Args:
+  - Callee:          '?count@?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@chrono@std@@QEBA_JXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 93, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 373, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15030'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+  - String:          ':'
+  - Line:            '20'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 392, Column: 0 }
+Function:        '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+Args:
+  - Callee:          '??$?0N$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBN@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 82, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 373, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+  - String:          ':'
+  - Line:            '20'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 91, Column: 0 }
+Function:        '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+Args:
+  - Callee:          '??$duration_cast@V?$duration@NU?$ratio@$00$00@std@@@chrono@std@@_JU?$ratio@$00$0JIJGIA@@3@$0A@@chrono@std@@YA?AV?$duration@NU?$ratio@$00$00@std@@@01@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 373, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 91, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15010'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 91, Column: 0 }
+Function:        '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+Args:
+  - Callee:          '?count@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEBANXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 93, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 91, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-35'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 6, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 184, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-20'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '?count@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEBANXZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 93, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15035'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '15'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 18, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '??$?0_JU?$ratio@$00$0JIJGIA@@std@@$0A@@?$duration@NU?$ratio@$00$00@std@@@chrono@std@@QEAA@AEBV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 91, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15000'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 18, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '??$?GUsystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@12@V312@@chrono@std@@YA?AV?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@01@AEBV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@01@0@Z'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 496, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14965'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '14'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 17, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 586, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '25'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '13'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 6, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '??0?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@chrono@std@@QEAA@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 184, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-15020'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '2'
+...
+--- !Passed
+Pass:            inline
+Name:            Inlined
+DebugLoc:        { File: SequentialSum.cpp, Line: 11, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          '?now@system_clock@chrono@std@@SA?AV?$time_point@Usystem_clock@chrono@std@@V?$duration@_JU?$ratio@$00$0JIJGIA@@std@@@23@@23@XZ'
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 586, Column: 0 }
+  - String:          ' inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' with '
+  - String:          '(cost='
+  - Cost:            '-14975'
+  - String:          ', threshold='
+  - Threshold:       '337'
+  - String:          ')'
+  - String:          ' at callsite '
+  - String:          '?ArraySumSequential@@YANPEAN0H@Z'
+  - String:          ':'
+  - Line:            '7'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 12, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            icmp
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: SequentialSum.cpp, Line: 12, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 587, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: SequentialSum.cpp, Line: 7, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 587, Column: 0 }
+...
+--- !Passed
+Pass:            gvn
+Name:            LoadElim
+DebugLoc:        { File: SequentialSum.cpp, Line: 21, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' eliminated'
+  - String:          ' in favor of '
+  - InfavorOfValue:  fadd
+    DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: SequentialSum.cpp, Line: 12, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 587, Column: 0 }
+...
+--- !Missed
+Pass:            gvn
+Name:            LoadClobbered
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'load of type '
+  - Type:            ''
+  - String:          ' not eliminated'
+  - String:          ' in favor of '
+  - OtherAccess:     store
+    DebugLoc:        { File: SequentialSum.cpp, Line: 7, Column: 0 }
+  - String:          ' because it is clobbered by '
+  - ClobberedBy:     call
+    DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                       Line: 587, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            zext
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 12, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            zext
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !Missed
+Pass:            inline
+Name:            NoDefinition
+DebugLoc:        { File: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\chrono', 
+                   Line: 587, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - Callee:          _Xtime_get_ticks
+  - String:          ' will not be inlined into '
+  - Caller:          '?ArraySumSequential@@YANPEAN0H@Z'
+    DebugLoc:        { File: SequentialSum.cpp, Line: 5, Column: 0 }
+  - String:          ' because its definition is unavailable'
+...
+--- !AnalysisFPCommute
+Pass:            loop-vectorize
+Name:            CantReorderFPOps
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'loop not vectorized: cannot prove it is safe to reorder floating-point operations'
+...
+--- !Missed
+Pass:            loop-vectorize
+Name:            MissedDetails
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          loop not vectorized
+...
+--- !Passed
+Pass:            loop-unroll
+Name:            PartialUnrolled
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'unrolled loop by a factor of '
+  - UnrollCount:     '8'
+  - String:          ' with run-time trip count'
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            InstSunk
+DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'sinking '
+  - Inst:            getelementptr
+    DebugLoc:        { File: SequentialSum.cpp, Line: 15, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 12, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            and
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            icmp
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            and
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Passed
+Pass:            licm
+Name:            Hoisted
+DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          'hoisting '
+  - Inst:            icmp
+    DebugLoc:        { File: SequentialSum.cpp, Line: 13, Column: 0 }
+...
+--- !Missed
+Pass:            licm
+Name:            LoadWithLoopInvariantAddressInvalidated
+DebugLoc:        { File: SequentialSum.cpp, Line: 19, Column: 0 }
+Function:        '?ArraySumSequential@@YANPEAN0H@Z'
+Args:
+  - String:          failed to move load with loop-invariant address because the loop may invalidate its value
+...
