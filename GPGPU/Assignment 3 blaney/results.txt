@@ -1,0 +1,9 @@
+					|	256		|	512		|	1024	|	2048	|	4096
+CPU Execution Time 	|	359		|	811		|	2230	|	8702	|	35082
+GPU Execution Time	|  	250		|	517		|	789		|	1533  	|	3069
+Speedup				| 	1.4		| 	1.6		|	2.8		|	5.7		|	11
+
+NSIGHT
+
+CPU Execution Time 	|	304		|	1099	|	2232	|	8908	|	36151
+GPU Execution Time	|  0.2545	|  0.4376	|  0.8684	|  1.5364	|	3.01	
