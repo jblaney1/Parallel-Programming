@@ -1,0 +1,26 @@
+﻿Parallell.cpp(8,8): : warning : unused variable 'fSumOfXYProduct' [-Wunused-variable]
+          float fSumOfXYProduct = 0.0f;
+                ^
+Parallell.cpp(6,8): : warning : unused variable 'fSumOfY' [-Wunused-variable]
+          float fSumOfY = 0.0f;
+                ^
+Parallell.cpp(7,8): : warning : unused variable 'fSumOfXSquare' [-Wunused-variable]
+          float fSumOfXSquare = 0.0f;
+                ^
+Parallell.cpp(5,8): : warning : unused variable 'fSumOfX' [-Wunused-variable]
+          float fSumOfX = 0.0f;
+                ^
+  4 warnings generated.
+TaskParallelism.cpp(39,8): : warning : unused variable 'fSumOfXSquare' [-Wunused-variable]
+          float fSumOfXSquare = 0.0f;
+                ^
+TaskParallelism.cpp(40,8): : warning : unused variable 'fSumOfXYProduct' [-Wunused-variable]
+          float fSumOfXYProduct = 0.0f;
+                ^
+TaskParallelism.cpp(37,8): : warning : unused variable 'fSumOfX' [-Wunused-variable]
+          float fSumOfX = 0.0f;
+                ^
+TaskParallelism.cpp(38,8): : warning : unused variable 'fSumOfY' [-Wunused-variable]
+          float fSumOfY = 0.0f;
+                ^
+  4 warnings generated.
