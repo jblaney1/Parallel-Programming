@@ -1,0 +1,81 @@
+﻿  Global loop optimization report for : ?InitializeArray@@YAXPEANH@Z
+  
+  LOOP BEGIN at Initialization.cpp (6, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ?Summation@@YANPEANHH@Z
+  
+  LOOP BEGIN at ParallelSum.cpp (6, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumParallel_ManualPartition@@YANPEAN0HH@Z
+  
+  LOOP BEGIN at ParallelSum.cpp (26, 0)
+  LOOP END
+  
+  LOOP BEGIN at ParallelSum.cpp (48, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumParallel_Reduction@@YANPEAN0HH@Z
+  
+  LOOP BEGIN at ParallelSum.cpp (66, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumParallel_ManualPartition@@YANPEAN0HH@Z.extracted
+  
+  LOOP BEGIN at ParallelSum.cpp (6, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumParallel_Reduction@@YANPEAN0HH@Z_tree_reduce_8
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumParallel_Reduction@@YANPEAN0HH@Z.extracted
+  
+  LOOP BEGIN at ParallelSum.cpp (77, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : main
+  =================================================================
+  
+  Global loop optimization report for : ??$?6U?$char_traits@D@std@@@std@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@0@AEAV10@PEBD@Z
+  
+  LOOP BEGIN at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream (748, 0)
+  LOOP END
+  
+  LOOP BEGIN at C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\ostream (761, 0)
+  LOOP END
+  =================================================================
+  
+  Global loop optimization report for : ??1_Sentry_base@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@XZ
+  =================================================================
+  
+  Global loop optimization report for : ?ArraySumSequential@@YANPEAN0H@Z
+  
+  LOOP BEGIN at SequentialSum.cpp (9, 0)
+  
+      LOOP BEGIN at SequentialSum.cpp (13, 0)
+      LOOP END
+  LOOP END
+  =================================================================
+  
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018: The "ICX" task failed unexpectedly.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018: code = CantOpen (14), message = System.Data.SQLite.SQLiteException (0x800007FF): unable to open database file
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at System.Data.SQLite.SQLite3.Open(String strFilename, String vfsName, SQLiteConnectionFlags connectionFlags, SQLiteOpenFlagsEnum openFlags, Int32 maxPoolSize, Boolean usePool)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at System.Data.SQLite.SQLiteConnection.Open()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Compiler.IDE.OptReports.DB.DBUtilities.CheckTablePresens(DBTableType tableTypes, Boolean checkAll)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Compiler.IDE.OptReports.DB.DBUtilities.Commit(OptReportsDataBase db, String projectFilePath, String solutionPath)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Compiler.IDE.OptReports.DB.MessageParser.CommitToDataBase(String solutionPath, String projectFilePath)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Compiler.IDE.OptReports.DB.MessageParser.ParseICXOptReports(IEnumerable`1 optReportFiles, String solutionPath, String projectFilePath, String optLevel)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Build.ICXTasks.ICX.ExecuteTool(String pathToTool, String responseFileCommands, String commandLineCommands)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Microsoft.Build.Utilities.ToolTask.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Microsoft.Build.CPPTasks.VCToolTask.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Microsoft.Build.CPPTasks.TrackedVCToolTask.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Intel.Build.ICXTasks.ICX.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskExecutionHost.Microsoft.Build.BackEnd.ITaskExecutionHost.Execute()
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Platforms\x64\PlatformToolsets\Intel C++ Compiler 2021\Toolset.targets(282,5): error MSB4018:    at Microsoft.Build.BackEnd.TaskBuilder.<ExecuteInstantiatedTask>d__26.MoveNext()
