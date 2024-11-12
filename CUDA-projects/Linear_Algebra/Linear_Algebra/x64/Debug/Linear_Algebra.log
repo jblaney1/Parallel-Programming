@@ -1,0 +1,4 @@
+﻿  Linear Algebra.cpp
+C:\Users\RadBo\source\repos\Linear_Algebra\Linear_Algebra\Linear Algebra.cpp(51,16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\RadBo\source\repos\Linear_Algebra\Linear_Algebra\Linear Algebra.cpp(64,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Linear_Algebra.vcxproj -> C:\Users\RadBo\source\repos\Linear_Algebra\x64\Debug\Linear_Algebra.exe
